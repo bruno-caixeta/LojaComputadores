@@ -1,0 +1,11 @@
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\bin\Debug\netcoreapp2.0\LojaComputadores.deps.json
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\bin\Debug\netcoreapp2.0\LojaComputadores.runtimeconfig.json
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\bin\Debug\netcoreapp2.0\LojaComputadores.runtimeconfig.dev.json
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\bin\Debug\netcoreapp2.0\LojaComputadores.dll
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\bin\Debug\netcoreapp2.0\LojaComputadores.pdb
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.AssemblyInfoInputs.cache
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.AssemblyInfo.cs
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.dll
+C:\Users\Bruno\source\repos\LojaComputadores\LojaComputadores\obj\Debug\netcoreapp2.0\LojaComputadores.pdb
