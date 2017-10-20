@@ -1,0 +1,35 @@
+﻿@model LojaComputadores.Models.CatalogoComputadores.ComputadorIndexModel
+
+<div id="computadores">
+    <h3>Lista de Produtos</h3>
+    <div id="tabelaComputadores">
+        <table class="table table-condensed" id="catalogoIndexTable">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>HD</th>
+                    <th>Placa de Video</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var computador in Model.Computadores)
+                {
+                    <tr class="computadorRow">
+                        <td class="">
+                            <a asp-controller="CatalogoComputadores" asp-action="Detail" asp-route-id="@computador.Id">
+                                <img src="@computador.ImageUrl" class="imageCell" />
+                            </a>
+                        </td>
+                        <td class="">@computador.Nome</td>
+                        <td class="">@computador.HD</td>
+                        <td class="">@computador.PlacaVideo</td>
+                        <td class="">@computador.Preco</td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

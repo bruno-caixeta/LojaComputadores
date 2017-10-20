@@ -23,7 +23,8 @@ namespace LojaComputadores
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
+            services.AddSingleton(Configuration);
+            services.AddScoped<IComputador, ComputadorService>();
             services.AddDbContext<LojaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("LojaConnection")));
         }
 

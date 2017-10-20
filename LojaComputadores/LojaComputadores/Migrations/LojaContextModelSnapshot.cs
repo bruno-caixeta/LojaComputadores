@@ -28,6 +28,8 @@ namespace LojaComputadores.Migrations
                     b.Property<string>("HD")
                         .IsRequired();
 
+                    b.Property<string>("ImageUrl");
+
                     b.Property<string>("Nome")
                         .IsRequired();
 

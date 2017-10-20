@@ -22,6 +22,7 @@ namespace LojaComputadores.Models
         public string PlacaMae { get; set; }
         public string PlacaVideo { get; set; }
         public string Processador { get; set; }
+        public string ImageUrl { get; set; }
 
         [Required]
         public float Preco { get; set; }
