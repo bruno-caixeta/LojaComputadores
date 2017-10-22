@@ -17,8 +17,8 @@
                 @foreach (var computador in Model.Computadores)
                 {
                     <tr class="computadorRow">
-                        <td class="">
-                            <a asp-controller="CatalogoComputadores" asp-action="Detail" asp-route-id="@computador.Id">
+                        <td>
+                            <a asp-controller="Computador" asp-action="Detail" asp-route-id="@computador.Id" >
                                 <img src="@computador.ImageUrl" class="imageCell" />
                             </a>
                         </td>

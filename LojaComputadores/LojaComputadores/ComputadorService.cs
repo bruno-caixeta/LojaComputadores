@@ -14,9 +14,9 @@ namespace LojaComputadores
             _context = context;
         }
 
-        public void Add(Computador novoComputador)
+        public void Add(Computador computador)
         {
-            _context.Add(novoComputador);
+            _context.Add(computador);
             _context.SaveChanges();
         }
 

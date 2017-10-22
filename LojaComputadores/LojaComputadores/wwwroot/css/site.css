@@ -33,3 +33,23 @@
         display: none;
     }
 }
+
+/*Imagem exibida do computador na pagina detalhe*/
+.detailImage{
+    max-width:200px;
+    padding-bottom:6px;
+}
+/*Imagem do computador na pagina principal*/
+.imageCell{
+    max-width:128px;
+    padding:10px;
+}
+
+#itemNome{
+    font-size:24px;
+}
+
+#itemPreco{
+    font-size:18px;
+    color:red;
+}

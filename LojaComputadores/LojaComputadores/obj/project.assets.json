@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\Projeto\\LojaComputadores\\LojaComputadores\\LojaComputadores.csproj",
+      "projectUniqueName": "C:\\Users\\Bruno\\Documents\\GitHub\\LojaComputadores\\LojaComputadores\\LojaComputadores\\LojaComputadores.csproj",
       "projectName": "LojaComputadores",
-      "projectPath": "C:\\Users\\Bruno\\Desktop\\Projeto\\LojaComputadores\\LojaComputadores\\LojaComputadores.csproj",
+      "projectPath": "C:\\Users\\Bruno\\Documents\\GitHub\\LojaComputadores\\LojaComputadores\\LojaComputadores\\LojaComputadores.csproj",
       "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruno\\Desktop\\Projeto\\LojaComputadores\\LojaComputadores\\obj\\",
+      "outputPath": "C:\\Users\\Bruno\\Documents\\GitHub\\LojaComputadores\\LojaComputadores\\LojaComputadores\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

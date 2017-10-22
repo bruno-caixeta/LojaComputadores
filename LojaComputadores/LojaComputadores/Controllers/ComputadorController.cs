@@ -1,4 +1,5 @@
-﻿using LojaComputadores.Models.CatalogoComputadores;
+﻿using LojaComputadores.Models;
+using LojaComputadores.Models.CatalogoComputadores;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -41,5 +42,31 @@ namespace LojaComputadores.Controllers
 
         }
 
+        public IActionResult Detail(int id)
+        {
+            var computador = _computadores.GetById(id);
+
+            var model = new ComputadorDetailModel
+            {
+                ComputadorId = id,
+                Nome = computador.Nome,
+                HD = computador.HD,
+                Ram = computador.Ram,
+                PlacaMae = computador.PlacaMae,
+                PlacaVideo = computador.PlacaVideo,
+                Processador = computador.Processador,
+                PrecoVista = computador.Preco - computador.Preco * 10 / 100,
+                PrecoVistaCartao = computador.Preco,
+                PrecoParcelado = Math.Round(Convert.ToDouble(computador.Preco) * Math.Pow(1.0 + 0.02, 10.0), 2),
+                ImageUrl = computador.ImageUrl
+            };
+
+            return View(model);
+        }
+
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
     }
 }

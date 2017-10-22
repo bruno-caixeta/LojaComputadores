@@ -1,0 +1,38 @@
+﻿@model LojaComputadores.Models.CatalogoComputadores.ComputadorDetailModel
+
+<div class="container">
+    <div class="page-header clearfix detailHeading">
+        <h2 class="text-muted">Visualizar Computador</h2>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <img class="detailImage" src="@Model.ImageUrl" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="itemNome" class="label label-primary">Nome</label>
+            <p id="itemNome">@Model.Nome</p>
+            <label for="itemHD" class="label label-primary">HD</label>
+            <p id="itemHD">@Model.HD</p>
+            <label for="itemRam" class="label label-primary">Memória Ram</label>
+            <p id="itemRam">@Model.Ram</p>
+            <label for="itemPlacaMae" class="label label-primary">Placa Mãe</label>
+            <p id="itemPlacaMae">@Model.PlacaMae</p>
+            <label for="itemPlacaVideo" class="label label-primary">Placa de Vídeo</label>
+            <p id="itemPlacaVideo">@Model.PlacaVideo</p>
+            <label for="itemProcessador" class="label label-primary">Processador</label>          
+            <p id="itemProcessador">@Model.Processador</p>
+            <label for="itemPrecoVista" class="label label-danger">Preço à vista</label>
+            <p id="itemPrecoVista"><span class="glyphicon glyphicon-usd"></span>  R$ @Model.PrecoVista</p>
+            <label for="itemPrecoVistaCartao" class="label label-danger">Preço à vista no cartão</label>
+            <p id="itemPrecoVistaCartao"><span class="glyphicon glyphicon-credit-card"></span>  R$ @Model.PrecoVistaCartao</p>
+            <label for="itemPrecoParcelado" class="label label-danger">Preço Parcelado</label>
+            <p id="itemPrecoParcelado"><span class="glyphicon glyphicon-credit-card"></span>  R$ @Model.PrecoParcelado</p>
+            <p><a class="btn btn-lg btn-info" role="button">Comprar</a></p>
+        </div>
+    </div>
+</div>
