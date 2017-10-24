@@ -1,5 +1,6 @@
 ﻿using LojaComputadores.Models;
 using LojaComputadores.Models.CatalogoComputadores;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -67,6 +68,18 @@ namespace LojaComputadores.Controllers
         public IActionResult Cadastro()
         {
             return View();
+            var NovoComputador = new Computador();
+            var model = new ComputadorCadastroModel(); 
+            NovoComputador.Nome = model.Nome;
+            NovoComputador.HD = model.HD;
+            NovoComputador.Ram = model.Ram;
+            NovoComputador.PlacaMae = model.PlacaMae;
+            NovoComputador.PlacaVideo = model.PlacaVideo;
+            NovoComputador.Processador = model.Processador;
+            NovoComputador.Preco = model.Preco;
+            _computadores.Add(NovoComputador);
+            
+            
         }
     }
 }
