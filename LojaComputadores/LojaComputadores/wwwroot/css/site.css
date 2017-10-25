@@ -14,6 +14,7 @@
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
+    color: navy;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
@@ -44,12 +45,13 @@
     max-width:128px;
     padding:10px;
 }
-
+/*Nome Computador Exibido*/
 #itemNome{
     font-size:24px;
 }
-
+/*Preço Computador Exibido*/
 #itemPreco{
     font-size:18px;
     color:red;
 }
+

@@ -68,18 +68,31 @@ namespace LojaComputadores.Controllers
         public IActionResult Cadastro()
         {
             return View();
-            var NovoComputador = new Computador();
-            var model = new ComputadorCadastroModel(); 
-            NovoComputador.Nome = model.Nome;
-            NovoComputador.HD = model.HD;
-            NovoComputador.Ram = model.Ram;
-            NovoComputador.PlacaMae = model.PlacaMae;
-            NovoComputador.PlacaVideo = model.PlacaVideo;
-            NovoComputador.Processador = model.Processador;
-            NovoComputador.Preco = model.Preco;
-            _computadores.Add(NovoComputador);
-            
-            
         }
+        
+        [HttpPost]
+        public ActionResult Cadastrar(Computador form)
+        {
+
+            Computador NovoComputador = new Computador
+            {
+                Nome = form.Nome,
+                HD = form.HD,
+                Ram = form.Ram,
+                PlacaMae = form.PlacaMae,
+                PlacaVideo = form.PlacaVideo,
+                Processador = form.Processador,
+                Preco = form.Preco,
+                ImageUrl = form.ImageUrl
+            };
+
+            _computadores.Add(NovoComputador);
+            return View("Cadastro");
+             
+        }
+
+        
+
+        
     }
 }

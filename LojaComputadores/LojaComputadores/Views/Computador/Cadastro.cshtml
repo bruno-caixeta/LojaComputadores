@@ -1,4 +1,4 @@
-﻿@model LojaComputadores.Models.CatalogoComputadores.ComputadorCadastroModel
+﻿@model LojaComputadores.Controllers.ComputadorController
 
 <div class="container">
     <div class="page-header clearfix detailHeading">
@@ -8,40 +8,45 @@
 
 <div class="jumbotron">
     <div class="form-group">
-        <form action="ComputadorCadastroModel" method="post" id="formcadastro">
-            <div class="col-xs-6">
-                <label for="Nome">Nome</label>
-                <input class="form-control" id="Nome" name="Nome" type="text" />
+        <form action="Cadastrar" method="post" id="form" type="Computador">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="Nome">Nome</label>
+                    <input class="form-control" id="Nome" name="Nome" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="HD">HD</label>
+                    <input class="form-control" id="HD" name="HD" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="Ram">Memória Ram</label>
+                    <input class="form-control" id="Ram" name="Ram" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="PlacaMae">Placa Mãe</label>
+                    <input class="form-control" id="PlacaMae" name="PlacaMae" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="PlacaVideo">Placa de Vídeo</label>
+                    <input class="form-control" id="PlacaVideo" name="PlacaVideo" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="Processador">Processador</label>
+                    <input class="form-control" id="Processador" name="Processador" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="Preco">Preço</label>
+                    <input class="form-control" id="Preco" name="Preco" type="text" />
+                </div>
+                <div class="col-xs-6">
+                    <label for="Imagem">Imagem</label>
+                    <input class="form-control" id="Imagem" name="Imagem" type="text" />
+                </div>
             </div>
-            <div class="col-xs-6">
-                <label for="HD">HD</label>
-                <input class="form-control" id="HD" name="HD" type="text" />
-            </div>
-            <div class="col-xs-6">
-                <label for="Ram">Memória Ram</label>
-                <input class="form-control" id="Ram" name="Ram" type="text" />
-            </div>
-            <div class="col-xs-6">
-                <label for="PlacaMae">Placa Mãe</label>
-                <input class="form-control" id="PlacaMae" name="PlacaMae" type="text" />
-            </div>
-            <div class="col-xs-6">
-                <label for="PlacaVideo">Placa de Vídeo</label>
-                <input class="form-control" id="PlacaVideo" name="PlacaVideo" type="text" />
-            </div>
-            <div class="col-xs-6">
-                <label for="Processador">Processador</label>
-                <input class="form-control" id="Processador" name="Processador" type="text" />
-            </div>
-            <div class="col-xs-6">
-                <label for="Preco">Preço</label>
-                <input class="form-control" id="Preco" name="Preco" type="text" />
-            </div>
-            <div>
+            <div class="row" align="center">
                 <button type="submit">Cadastrar</button>
             </div>
         </form>
     </div>
 </div>
-
 
